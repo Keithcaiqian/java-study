@@ -4,8 +4,8 @@ import com.ljk.ui.RegisterJFrame;
 
 public class App {
     public static void main(String[] args) {
-        new LoginJFrame();
+//        new LoginJFrame();
         new GameJFrame();
-        new RegisterJFrame();
+//        new RegisterJFrame();
     }
 }
