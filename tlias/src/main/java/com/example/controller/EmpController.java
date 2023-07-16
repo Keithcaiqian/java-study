@@ -49,4 +49,16 @@ public class EmpController {
         empService.add(emp);
         return Result.success();
     }
+
+    @GetMapping("/{id}")
+    public Result getById(@PathVariable Integer id){
+        Emp emp = empService.getById(id);
+        return Result.success(emp);
+    }
+
+    @PutMapping
+    public Result update(@RequestBody Emp emp){
+        empService.update(emp);
+        return  Result.success();
+    }
 }
